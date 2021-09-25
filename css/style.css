@@ -47,11 +47,13 @@ body {
     position: absolute;
     top: 40%;
     left: 50%;
+    text-align: center;
     transform: translate(-50%, -50%);
 }
 
 .heading-primary {
     color: #ffffff;
+    margin-bottom: 60px;
     text-transform: uppercase;
 
     backface-visibility: hidden;
@@ -75,6 +77,61 @@ body {
     letter-spacing: 18px;
 
     animation: moveInRight 1s ease-out;
+}
+
+.button:link,
+.button:visited {
+    border-radius: 100px;
+    display: inline-block;
+    padding: 15px 40px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s;
+}
+
+/* Make it look like the button goes up when interacted with. */
+.button:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transform: translateY(-3px);
+}
+
+.button:active {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    transform: translateY(-1px);
+}
+
+/* Make it look like the button flashes when hovered. */
+.button::after {
+    border-radius: 100px;
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+.button:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.button--white {
+    background-color: #ffffff;
+    color: #777777;
+}
+
+.button--white::after {
+    background-color: #ffffff;
+}
+
+.button--animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
 }
 
 @keyframes moveInLeft {
@@ -101,6 +158,18 @@ body {
 
     80% {
         transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
     }
 
     100% {
