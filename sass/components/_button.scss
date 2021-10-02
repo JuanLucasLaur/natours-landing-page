@@ -8,22 +8,22 @@
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
-    transition: all .2s;
+    transition: all 0.2s;
   }
 
   /* Make it look like the button goes up when interacted with. */
   &:hover {
-    box-shadow: 0 1rem 2rem rgba($color-black, .2);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
     transform: translateY(-3px);
 
     &::after {
-      transform: scaleX(1.4) scaleY(1.6);
       opacity: 0;
+      transform: scaleX(1.4) scaleY(1.6);
     }
   }
 
   &:active {
-    box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
     transform: translateY(-1px);
   }
 
@@ -33,11 +33,11 @@
     content: "";
     display: inline-block;
     height: 100%;
-    width: 100%;
     left: 0;
-    top: 0;
     position: absolute;
-    transition: all .5s;
+    top: 0;
+    transition: all 0.5s;
+    width: 100%;
     z-index: -1;
   }
 
@@ -51,7 +51,7 @@
   }
 
   &--animated {
-    animation: moveInBottom .5s ease-out .75s;
+    animation: moveInBottom 0.5s ease-out 0.75s;
     animation-fill-mode: backwards;
   }
 }

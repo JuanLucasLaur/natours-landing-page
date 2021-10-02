@@ -1,9 +1,11 @@
 /* Base */
 // Normalize css
-*, *::after, *::before {
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
 }
 
 html {
