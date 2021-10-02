@@ -1,0 +1,16 @@
+/* Base */
+// Normalize css
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // Set default root font-size to 10px (62.5% of 16px) to make it easier to work with rems for responsiveness
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
