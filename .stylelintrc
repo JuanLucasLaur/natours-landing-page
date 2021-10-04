@@ -8,6 +8,7 @@
     "css/**/*.css"
   ],
   "rules": {
+    "color-named": null,
     "max-nesting-depth": null,
     "prettier/prettier": true
   }
