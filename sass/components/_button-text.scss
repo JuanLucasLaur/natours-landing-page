@@ -1,0 +1,26 @@
+/* Button text */
+
+.button-text {
+  &:link,
+  &:visited {
+    border-bottom: 1px solid $color-primary;
+    color: $color-primary;
+    display: inline-block;
+    font-size: $default-font-size;
+    padding: 0.3rem;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    background-color: $color-primary;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    color: $color-white;
+    transform: translateY(-0.2rem);
+  }
+
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+    transform: translateY(0);
+  }
+}
