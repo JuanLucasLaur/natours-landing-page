@@ -6,3 +6,13 @@
     display: table;
   }
 }
+
+@mixin gradientText {
+  background-clip: text;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  color: transparent;
+}
