@@ -36,7 +36,7 @@ body {
 }
 
 .heading-secondary {
-  @include gradientText;
+  @include gradient-text;
   display: inline-block;
   font-size: 3.5rem;
   font-weight: 700;

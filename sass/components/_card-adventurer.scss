@@ -1,0 +1,17 @@
+/* Snow Adventurer tour card */
+.card--adventurer {
+  .card {
+    &__side--back {
+      background-image: get-nary-linear-gradient(right bottom, "tertiary");
+    }
+
+    &__picture {
+      background-image: get-nary-linear-gradient(right bottom, "tertiary"),
+        url("../img/nat-7.jpg");
+    }
+
+    &__heading-span {
+      background-image: get-nary-linear-gradient(right bottom, "tertiary", 0.8);
+    }
+  }
+}

@@ -9,7 +9,7 @@
   transition: transform 0.3s;
 
   &__icon {
-    @include gradientText;
+    @include gradient-text;
     font-size: 6rem;
     margin-bottom: 0.5rem;
   }

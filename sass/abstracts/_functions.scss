@@ -1,0 +1,24 @@
+/* Functions */
+@function get-nary-linear-gradient($direction, $color, $transparency: 1) {
+  $color-light: "";
+  $color-dark: "";
+
+  @if ($color == "primary") {
+    $color-light: $color-primary-light;
+    $color-dark: $color-primary-dark;
+  }
+  @if ($color == "secondary") {
+    $color-light: $color-secondary-light;
+    $color-dark: $color-secondary-dark;
+  }
+  @if ($color == "tertiary") {
+    $color-light: $color-tertiary-light;
+    $color-dark: $color-tertiary-dark;
+  }
+
+  @return linear-gradient(
+    to $direction,
+    rgba($color-light, $transparency),
+    rgba($color-dark, $transparency)
+  );
+}

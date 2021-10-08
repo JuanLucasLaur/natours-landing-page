@@ -1,10 +1,6 @@
 /* Header */
 .header {
-  background-image: linear-gradient(
-      to right bottom,
-      rgba($color-primary-light, 0.8),
-      rgba($color-primary-dark, 0.8)
-    ),
+  background-image: get-nary-linear-gradient(right bottom, "primary", 0.8),
     url("../img/hero.jpg");
   background-position: top;
   background-size: cover;
