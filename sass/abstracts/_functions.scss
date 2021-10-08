@@ -1,5 +1,8 @@
 /* Functions */
 @function get-nary-linear-gradient($direction, $color, $transparency: 1) {
+  $color-light: "";
+  $color-dark: "";
+
   @if ($color == "primary") {
     $color-light: $color-primary-light;
     $color-dark: $color-primary-dark;
