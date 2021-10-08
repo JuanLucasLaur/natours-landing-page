@@ -1,0 +1,17 @@
+/* Sea Explorer tour card */
+.card--explorer {
+  .card {
+    &__side--back {
+      background-image: get-nary-linear-gradient(right bottom, "secondary");
+    }
+
+    &__picture {
+      background-image: get-nary-linear-gradient(right bottom, "secondary"),
+      url("../img/nat-5.jpg");
+    }
+
+    &__heading-span {
+      background-image: get-nary-linear-gradient(right bottom, "secondary", 0.8);
+    }
+  }
+}

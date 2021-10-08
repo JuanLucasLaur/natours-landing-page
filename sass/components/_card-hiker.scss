@@ -1,0 +1,17 @@
+/* Forest Hiker tour card */
+.card--hiker {
+  .card {
+    &__side--back {
+      background-image: get-nary-linear-gradient(right bottom, "primary");
+    }
+
+    &__picture {
+      background-image: get-nary-linear-gradient(right bottom, "primary"),
+        url("../img/nat-6.jpg");
+    }
+
+    &__heading-span {
+      background-image: get-nary-linear-gradient(right bottom, "primary", 0.8);
+    }
+  }
+}

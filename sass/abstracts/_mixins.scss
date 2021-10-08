@@ -9,11 +9,7 @@
 
 @mixin gradient-text {
   background-clip: text;
-  background-image: linear-gradient(
-    to right,
-    $color-primary-light,
-    $color-primary-dark
-  );
+  background-image: get-nary-linear-gradient(right, "primary");
   color: transparent;
   -webkit-background-clip: text;
 }
