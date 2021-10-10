@@ -10,11 +10,13 @@
 @import "base/utilities";
 
 /* Import components */
+@import "components/background-video";
 @import "components/button";
 @import "components/button-text";
 @import "components/card";
 @import "components/composition";
 @import "components/feature-box";
+@import "components/story";
 
 /* Import layout */
 @import "layout/grid";
