@@ -30,14 +30,11 @@
   }
 
   &__caption {
+    @include position-center;
     color: $color-white;
-    left: 50%;
     opacity: 0;
-    position: absolute;
     text-align: center;
     text-transform: uppercase;
-    top: 50%;
-    transform: translate(-50%, 25%);
     transition: all 0.5s;
   }
 
