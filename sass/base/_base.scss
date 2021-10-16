@@ -11,6 +11,14 @@
 html {
   // Set default root font-size to 10px (62.5% of 16px) to make it easier to work with rems for responsiveness
   font-size: 62.5%;
+
+  @include responsive-breakpoint(tablet-landscape) {
+    font-size: 55%;
+  }
+
+  @include responsive-breakpoint(tablet-portrait) {
+    font-size: 50%;
+  }
 }
 
 body {
