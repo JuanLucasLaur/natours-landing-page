@@ -5,9 +5,17 @@
   font-size: 1.4rem;
   padding: 10rem 0;
 
+  @include responsive-breakpoint(tablet-portrait) {
+    padding: 8rem 0;
+  }
+
   &__logo-box {
     margin-bottom: 8rem;
     text-align: center;
+
+    @include responsive-breakpoint(tablet-portrait) {
+      margin-bottom: 6rem;
+    }
   }
 
   &__logo {
@@ -19,6 +27,11 @@
     border-top: 1px solid $color-gray-dark;
     display: inline-block;
     padding-top: 2rem;
+
+    @include responsive-breakpoint(tablet-portrait) {
+      text-align: center;
+      width: 100%;
+    }
   }
 
   &__list {
@@ -44,7 +57,7 @@
 
     &:hover,
     &:active {
-      color: $color-primary
+      color: $color-primary;
     }
   }
 
@@ -53,5 +66,10 @@
     display: inline-block;
     float: right;
     width: 75%;
+
+    @include responsive-breakpoint(tablet-portrait) {
+      float: none;
+      width: 100%;
+    }
   }
 }
