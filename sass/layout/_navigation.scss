@@ -13,6 +13,11 @@
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
     width: 6rem;
     z-index: 15;
+
+    @include responsive-breakpoint(tablet-portrait) {
+      right: 2.5rem;
+      top: 2.5rem;
+    }
   }
 
   &__container {
@@ -45,7 +50,7 @@
         transparent 50%,
         $color-white 50%
       );
-      background-size: 225%;
+      background-size: 255%;
       color: $color-white;
       display: inline-block;
       font-size: 3rem;
@@ -104,6 +109,11 @@
     top: 6rem;
     width: 7rem;
     z-index: 20;
+
+    @include responsive-breakpoint(tablet-portrait) {
+      right: 2rem;
+      top: 2rem;
+    }
 
     &:hover .navigation__icon {
       &::before {

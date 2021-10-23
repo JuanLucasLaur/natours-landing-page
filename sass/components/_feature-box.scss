@@ -8,10 +8,18 @@
   text-align: center;
   transition: transform 0.3s;
 
+  @include responsive-breakpoint(tablet-portrait) {
+    padding: 2rem;
+  }
+
   &__icon {
     @include gradient-text;
     font-size: 6rem;
     margin-bottom: 0.5rem;
+
+    @include responsive-breakpoint(tablet-portrait) {
+      margin-bottom: 0;
+    }
   }
 
   &:hover {

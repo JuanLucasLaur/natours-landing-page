@@ -20,3 +20,23 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
+@mixin responsive-breakpoint($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: $screen-width-small) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet-portrait {
+    @media (max-width: $screen-width-medium) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet-landscape {
+    @media (max-width: $screen-width-large) {
+      @content;
+    }
+  }
+}
