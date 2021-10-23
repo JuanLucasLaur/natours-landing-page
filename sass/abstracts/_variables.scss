@@ -34,3 +34,6 @@ $col-1-of-4-width: calc((100% - (#{$gutter-horizontal} * 3)) / 4);
 $screen-width-small: 37.5em;
 $screen-width-medium: 56.25em;
 $screen-width-large: 80em;
+
+// Screen resolutions
+$screen-resolution-high: 192dpi;
