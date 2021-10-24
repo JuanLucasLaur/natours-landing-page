@@ -8,8 +8,8 @@
   height: 95vh;
   position: relative;
 
-  @media (min-resolution: $screen-resolution-high) and (min-width: $screen-width-small),
-    (min-width: $screen-width-large) {
+  @media only screen and (min-resolution: $screen-resolution-high) and (min-width: $screen-width-small),
+    only screen and (min-width: $screen-width-large) {
     background-image: get-nary-linear-gradient(right bottom, "primary", 0.8),
       url("../img/hero.jpg");
   }

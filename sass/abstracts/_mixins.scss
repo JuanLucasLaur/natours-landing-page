@@ -23,19 +23,19 @@
 
 @mixin responsive-breakpoint($breakpoint) {
   @if $breakpoint == phone {
-    @media (max-width: $screen-width-small) {
+    @media only screen and (max-width: $screen-width-small) {
       @content;
     }
   }
 
   @if $breakpoint == tablet-portrait {
-    @media (max-width: $screen-width-medium) {
+    @media only screen and (max-width: $screen-width-medium) {
       @content;
     }
   }
 
   @if $breakpoint == tablet-landscape {
-    @media (max-width: $screen-width-large) {
+    @media only screen and (max-width: $screen-width-large) {
       @content;
     }
   }
